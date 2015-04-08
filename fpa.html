@@ -375,33 +375,49 @@ input[type='text'], input:not([type]), textarea {
         </script>
 		
 <script type="text/javascript" language="JavaScript">
-$( document ).ready(function FillForm() {
 
-var FormName = "ss-form";
-var questionlocation = location.href.indexOf('?');
-if(questionlocation < 0) { return; }
-var q = location.href.substr(questionlocation + 1);
-var list = q.split('&');
-for(var i = 0; i < list.length; i++) {
-   var kv = list[i].split('=');
-   if(! eval('document.'+FormName+'.'+kv[0])) { continue; }
-   kv[1] = unescape(kv[1]);
-   if(kv[1].indexOf('"') > -1) {
-      var re = /"/g;
-      kv[1] = kv[1].replace(re,'\\"');
-      }
-   eval('document.'+FormName+'.'+kv[0]+'.value="'+kv[1]+'"');
-   }
-});
+function getParm(name)
+{
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)";
+  var regex = new RegExp(regexS);
+  var results = regex.exec(window.location.href);
+  
+  //set variables for each of the fields you wish to pre-file
+  //reference them by the ID you found for the field when viewing the source
+  clientNameField = document.getElementById("entry.392214808");
+  clientProjectField = document.getElementById("entry.2020216908");
+  clientProjectCodeField = document.getElementById("entry.1388242170");
+
+
+  if(results == null)
+    return "";
+  else
+    return results[1];
+}
+
+//This function executes the function above and set the values in the fields
+window.onload=function execParm() {
+	alert("Hello!");
+    var cname = getParm('cname');
+    var cprojname = getParm('cprojname');   
+    var cprojcode = getParm('cprojcode');
+    clientNameField.value = cname;
+    clientProjectField.value = cprojname;
+    clientProjectCodeField.value = cprojcode;
+
+};
 
 </script>
+
+
 
 		
 		
 <link rel="alternate" type="text/xml+oembed" href="https://docs.google.com/a/fractalanalytics.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/oembed?url=https://docs.google.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/viewform&amp;format=xml">
 <meta property="og:title" content="Fractal&#39;s Performance Assessment"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/viewform?usp=embed_facebook"><meta property="og:image" content="https://lh6.googleusercontent.com/2xSf8HpBcRlymAVxLUda17CQGTJqn3GVNGgsM9N4j0Jo_15Jkkskt1V6h2OlibqFFjY=w1200-h630-p"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:description" content="Please take a few minutes to provide your feedback on working with Fractal:"><meta name="twitter:card" content="player"><meta name="twitter:title" content="Fractal&#39;s Performance Assessment"><meta name="twitter:url" content="https://docs.google.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/viewform?usp=embed_twitter"><meta name="twitter:image" content="https://lh6.googleusercontent.com/2xSf8HpBcRlymAVxLUda17CQGTJqn3GVNGgsM9N4j0Jo_15Jkkskt1V6h2OlibqFFjY=w435-h251-p-b1-c0x00999999"><meta name="twitter:player:width" content="435"><meta name="twitter:player:height" content="251"><meta name="twitter:player" content="https://docs.google.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/viewform?embedded=true&amp;usp=embed_twitter"><meta name="twitter:description" content="Please take a few minutes to provide your feedback on working with Fractal:"><meta name="twitter:site" content="@googledocs">
 </head>
-<body dir="ltr" class="ss-base-body">
+<body dir="ltr" class="ss-base-body" >
 <div class="container">
 
 <div itemscope itemtype="http://schema.org/CreativeWork/FormObject"><meta itemprop="name" content="Fractal&#39;s Performance Assessment">
@@ -441,7 +457,7 @@ for(var i = 0; i < list.length; i++) {
 </td>
 <td>
 <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-<input type="text" name="entry.392214808" value="" class="ss-q-short" id="entry_392214808" dir="auto" aria-label="Name:  " title="" disabled>
+<input type="text" name="entry.392214808" value="" class="ss-q-short" id="entry_392214808" dir="auto" aria-label="Name:  " title="" >
 <div class="error-message" id="1934739165_errorMessage"></div>
 <!--<div class="required-message">This is a required question</div>-->
 </div></div></div> <div class="ss-form-question errorbox-good" role="listitem"></td>
@@ -629,8 +645,8 @@ for(var i = 0; i < list.length; i++) {
 <div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
 <label class="ss-q-item-label" for="entry_1814143696"><div class="ss-q-title">Project Code
 </div>
-<div class="ss-q-help ss-secondary-text" dir="ltr">Do not change this</div></label>
-<input type="text" name="entry.1814143696" value="" class="ss-q-short" id="entry_1814143696" dir="auto" aria-label="Project Code" title="">
+</label>
+<input type="text" name="entry.1814143696" value="" class="ss-q-short" id="entry_1814143696" dir="auto" aria-label="Project Code Do not change this " title="">
 <div class="error-message" id="1460627605_errorMessage"></div>
 
 <!--<div class="required-message">This is a required question</div>-->
