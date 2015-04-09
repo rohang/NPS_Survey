@@ -9,7 +9,7 @@
 <base target="_blank">
 <title>Fractal&#39;s Performance Assessment</title>
 <link href='http://fonts.googleapis.com/css?family=Calibri' rel='stylesheet' type='text/css'>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 
 <style type="text/css">
 
@@ -339,7 +339,7 @@ input[type='text'], input:not([type]), textarea {
 
 
 <link  type='text/css' rel='stylesheet' media='screen and (max-device-width: 721px)'>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 <script type="text/javascript">
           /**
  * @license
@@ -376,37 +376,15 @@ input[type='text'], input:not([type]), textarea {
 		
 <script type="text/javascript" language="JavaScript">
 
-function getParm(name)
-{
-  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
-  var regexS = "[\\?&]"+name+"=([^&#]*)";
-  var regex = new RegExp(regexS);
-  var results = regex.exec(window.location.href);
-  
-  //set variables for each of the fields you wish to pre-file
-  //reference them by the ID you found for the field when viewing the source
-  clientNameField = document.getElementById("entry.392214808");
-  clientProjectField = document.getElementById("entry.2020216908");
-  clientProjectCodeField = document.getElementById("entry.1388242170");
-
-
-  if(results == null)
-    return "";
-  else
-    return results[1];
+window.onload=function fillForm(){
+var hashParams = window.location.hash.substr(1).split('&'); 
+for(var i = 0; i < hashParams.length; i++){
+    var p = hashParams[i].split('=');
+    document.getElementById(p[0]).value = decodeURIComponent(p[1]);;
+}
 }
 
-//This function executes the function above and set the values in the fields
-window.onload=function execParm() {
-	alert("Hello!");
-    var cname = getParm('cname');
-    var cprojname = getParm('cprojname');   
-    var cprojcode = getParm('cprojcode');
-    clientNameField.value = cname;
-    clientProjectField.value = cprojname;
-    clientProjectCodeField.value = cprojcode;
 
-};
 
 </script>
 
@@ -417,7 +395,7 @@ window.onload=function execParm() {
 <link rel="alternate" type="text/xml+oembed" href="https://docs.google.com/a/fractalanalytics.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/oembed?url=https://docs.google.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/viewform&amp;format=xml">
 <meta property="og:title" content="Fractal&#39;s Performance Assessment"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/viewform?usp=embed_facebook"><meta property="og:image" content="https://lh6.googleusercontent.com/2xSf8HpBcRlymAVxLUda17CQGTJqn3GVNGgsM9N4j0Jo_15Jkkskt1V6h2OlibqFFjY=w1200-h630-p"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:description" content="Please take a few minutes to provide your feedback on working with Fractal:"><meta name="twitter:card" content="player"><meta name="twitter:title" content="Fractal&#39;s Performance Assessment"><meta name="twitter:url" content="https://docs.google.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/viewform?usp=embed_twitter"><meta name="twitter:image" content="https://lh6.googleusercontent.com/2xSf8HpBcRlymAVxLUda17CQGTJqn3GVNGgsM9N4j0Jo_15Jkkskt1V6h2OlibqFFjY=w435-h251-p-b1-c0x00999999"><meta name="twitter:player:width" content="435"><meta name="twitter:player:height" content="251"><meta name="twitter:player" content="https://docs.google.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/viewform?embedded=true&amp;usp=embed_twitter"><meta name="twitter:description" content="Please take a few minutes to provide your feedback on working with Fractal:"><meta name="twitter:site" content="@googledocs">
 </head>
-<body dir="ltr" class="ss-base-body" >
+<body dir="ltr" class="ss-base-body"  >
 <div class="container">
 
 <div itemscope itemtype="http://schema.org/CreativeWork/FormObject"><meta itemprop="name" content="Fractal&#39;s Performance Assessment">
