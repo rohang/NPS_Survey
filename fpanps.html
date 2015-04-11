@@ -1,0 +1,686 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head>
+<link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png" type="image/x-icon">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=10; chrome=1;">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width">
+<base target="_blank">
+<title>Fractal&#39;s Performance Assessment</title>
+<link href='http://fonts.googleapis.com/css?family=Calibri' rel='stylesheet' type='text/css'>
+
+
+<style type="text/css">
+
+body /* Internet Explorer */ 
+{ 
+	background-color: #FFFFFF;
+} 
+
+
+.btn-style {
+  background: #d10429;
+  background-image: -webkit-linear-gradient(top, #d10429, #d10429);
+  background-image: -moz-linear-gradient(top, #d10429, #d10429);
+  background-image: -ms-linear-gradient(top, #d10429, #d10429);
+  background-image: -o-linear-gradient(top, #d10429, #d10429);
+  background-image: linear-gradient(to bottom, #d10429, #d10429);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn-style:hover {
+  text-decoration: none;
+}
+
+
+body /* Mozilla Firefox alignment */ 
+{ 
+	background-color: #FFFFFF;
+} 
+
+input type="textbox"
+{
+	margin: 0px;
+	border: 1px solid #003C9F;
+	font-family: Calibri;
+	font-size: 12px;
+	color: #000000;
+}
+
+input type="checkbox"
+{
+	margin: 0px;
+	border: 1px solid #003C9F;
+	font-family: Calibri;
+	font-size: 12px;
+	color: #000000;
+}
+
+textarea
+{
+	margin: 0px;
+	border: 1px solid #003C9F;
+	font-family: Calibri;
+	font-size: 12px;
+	color: #000000;
+	width: 430px;
+}
+select
+{
+	margin: 0px;
+	border: 1px solid #003C9F;
+	font-family: Calibri;
+	font-size: 12px;
+	color: #000000;
+}
+
+.CheckboxSeparator 
+{
+	width: 0px;
+}
+.ss-form-container, .ss-resp-card {
+  background-color: rgb(255,255,255);
+}
+
+.ss-footer, .ss-response-footer {
+  background-color: rgb(255,255,255);
+}
+
+.ss-grid-row-odd {
+  background-color: rgb(242,242,242);
+}
+
+.ss-form-container, .ss-resp-card {
+  border-color: rgb(255,255,255);
+}
+
+.ss-form-title {
+  text-align: left;
+}
+
+.ss-form-title[dir="rtl"] {
+  text-align: right;
+}
+
+.ss-form-desc {
+  text-align: justify;
+  margin:0% 10% 0% 10%;
+}
+.ss-form{
+margin:0% 10% 0% 10%;
+  }
+.ss-form-desc[dir="rtl"] {
+  text-align: justify;
+  margin:0% 10% 0% 10%;
+}
+
+.ss-header-image-container {
+  height: auto;
+ margin:0% 20% 0% 15%; 
+}
+
+.ss-header-image-image {
+  background: url('https://lh6.googleusercontent.com/CZqJnlaaNrrr-8l7BjQFJixcJHeKqmBPPYbXoqkSPdAFTYYCy8Msf1VuFJfvM86_MmzKMw') no-repeat;
+}
+
+.ss-header-image-sizer {
+  padding-top: 25.026%;
+}
+
+.ss-item {
+  font-size: 1.080rem;
+}
+
+.ss-choices {
+  font-size: 1.000rem;
+  list-style-type: none
+  
+}
+
+body {
+  font-family: "Calibri";
+  color: rgb(0,0,0);
+  font-weight: 400;
+  font-size: 1.080rem;
+  font-style: normal;
+}
+
+.ss-record-username-message {
+  font-family: "Calibri";
+  color: rgb(0,0,0);
+  font-weight: 400;
+  font-size: 1.080rem;
+  font-style: normal;
+}
+
+.ss-form-title {
+  font-family: "Calibri";
+  color: rgb(255,255,255);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.ss-confirmation {
+  font-family: "Calibri";
+  color: rgb(119,119,119);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.ss-page-title, .ss-section-title {
+  font-family: "Calibri";
+  color: rgb(255,255,255);
+  font-weight: 400;
+  font-size: 0.750rem;
+  font-style: normal;
+}
+
+.ss-form-desc, .ss-page-description, .ss-section-description {
+  font-family: "Calibri";
+  color: rgb(0,0,0);
+  font-weight: 400;
+  font-size: 1.080rem;
+  font-style: normal;
+}
+
+.ss-resp-content {
+  font-family: "Calibri";
+  color: rgb(0,0,0);
+  font-weight: 400;
+  font-size: 1.080rem;
+  font-style: normal;
+}
+
+.ss-q-title {
+  font-family: "Calibri";
+  color: rgb(96,125,139);
+  font-weight: 700;
+  font-size: 1.080rem;
+  font-style: normal;
+}
+
+.ss-embeddable-object-container .ss-q-title {
+  font-family: "Calibri";
+  color: rgb(96,125,139);
+  font-weight: 700;
+  font-size: 0.750rem;
+  font-style: normal;
+}
+
+.ss-q-help, .ss-q-time-hint {
+  font-family: "Calibri";
+  color: rgb(132,132,132);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.ss-choice-label, .video-secondary-text, .ss-gridrow-leftlabel, .ss-gridnumber, .ss-scalenumber, .ss-leftlabel, .ss-rightlabel {
+  font-family: "Calibri";
+  color: rgb(96,125,139);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.error-message, .required-message, .ss-required-asterisk {
+  font-family: "Calibri";
+  color: rgb(196,59,29);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.ss-send-email-receipt {
+  font-family: "Calibri";
+  color: rgb(93,123,137);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.ss-password-warning {
+  font-family: "Arial";
+  color: rgb(119,119,119);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: italic;
+}
+
+.PageBackground 
+{
+	background-color: #EEEEEE;
+	height:20px !important; 
+}
+
+.disclaimer {
+  font-family: "Arial";
+  color: rgb(119,119,119);
+  font-weight: 400;
+  font-size: 0.850rem;
+  font-style: normal;
+}
+
+.ss-footer-content {
+  font-family: "Arial";
+  color: rgb(93,123,137);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.progress-label {
+  font-family: "Calibri";
+  color: rgb(132,132,132);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+a:link {
+  color: rgb(0,0,238);
+}
+
+a:visited {
+  color: rgb(85,26,139);
+}
+
+a:active {
+  color: rgb(252,0,0);
+}
+
+input[type='text'], input:not([type]), textarea {
+  font-size: 1.000rem;
+}
+
+.error, .required, .errorbox-bad {
+  border-color: rgb(196,59,29);
+}
+
+.jfk-progressBar-nonBlocking .progress-bar-thumb {
+  background-color: rgb(132,132,132);
+}
+
+.ss-logo-image {
+  background-image: url('//ssl.gstatic.com/docs/forms/forms_logo_small_dark.png');
+  background-size: 108px 21px;
+  width: 108px;
+  height: 21px;
+}
+
+@media screen and (-webkit-device-pixel-ratio: 2) {
+.ss-logo-image {
+  background-image: url('//ssl.gstatic.com/docs/forms/forms_logo_small_dark_2x.png');
+}
+}
+
+.container{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+	border-style: none;
+    border-width: none;
+	-webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:1px 5px 8px -3px rgba(40, 40, 40, 0.75);
+}
+
+</style>
+
+
+<link  type='text/css' rel='stylesheet' media='screen and (max-device-width: 721px)'>
+
+<script type="text/javascript">
+          /**
+ * @license
+ *
+ * H5F 1.1.1
+ * See https://github.com/ryanseddon/H5F/ for details.
+ *
+ * Copyright (c) 2013 Ryan Seddon
+ *
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ *
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ */
+(function(e,t){"function"==typeof define&&define.amd?define(t):"object"==typeof module&&module.exports?module.exports=t():e.H5F=t()})(this,function(){var e,t,a,i,n,r,l,s,o,u,d,c,v,p,f,m,b,h,g,y,w,C,N,A,E,$,x=document,k=x.createElement("input"),q=/^[a-zA-Z0-9.!#$%&'*+-\/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,M=/[a-z][\-\.+a-z]*:\/\//i,L=/^(input|select|textarea)$/i;return r=function(e,t){var a=!e.nodeType||!1,i={validClass:"valid",invalidClass:"error",requiredClass:"required",placeholderClass:"placeholder",onSubmit:Function.prototype,onInvalid:Function.prototype};if("object"==typeof t)for(var r in i)t[r]===void 0&&(t[r]=i[r]);if(n=t||i,a)for(var s=0,o=e.length;o>s;s++)l(e[s]);else l(e)},l=function(a){var i,r=a.elements,l=r.length,c=!!a.attributes.novalidate;if(g(a,"invalid",o,!0),g(a,"blur",o,!0),g(a,"input",o,!0),g(a,"keyup",o,!0),g(a,"focus",o,!0),g(a,"change",o,!0),g(a,"click",u,!0),g(a,"submit",function(i){return e=!0,t||c||a.checkValidity()?(n.onSubmit.call(a,i),void 0):(w(i),void 0)},!1),!v())for(a.checkValidity=function(){return d(a)};l--;)i=!!r[l].attributes.required,"fieldset"!==r[l].nodeName.toLowerCase()&&s(r[l])},s=function(e){var t=e,a=h(t),n={type:t.getAttribute("type"),pattern:t.getAttribute("pattern"),placeholder:t.getAttribute("placeholder")},r=/^(email|url)$/i,l=/^(input|keyup)$/i,s=r.test(n.type)?n.type:n.pattern?n.pattern:!1,o=p(t,s),u=m(t,"step"),v=m(t,"min"),b=m(t,"max"),g=!(""===t.validationMessage||void 0===t.validationMessage);t.checkValidity=function(){return d.call(this,t)},t.setCustomValidity=function(e){c.call(t,e)},t.validity={valueMissing:a,patternMismatch:o,rangeUnderflow:v,rangeOverflow:b,stepMismatch:u,customError:g,valid:!(a||o||u||v||b||g)},n.placeholder&&!l.test(i)&&f(t)},o=function(e){var t=C(e)||e,a=/^(input|keyup|focusin|focus|change)$/i,r=/^(submit|image|button|reset)$/i,l=/^(checkbox|radio)$/i,u=!0;!L.test(t.nodeName)||r.test(t.type)||r.test(t.nodeName)||(i=e.type,v()||s(t),t.validity.valid&&(""!==t.value||l.test(t.type))||t.value!==t.getAttribute("placeholder")&&t.validity.valid?(A(t,[n.invalidClass,n.requiredClass]),N(t,n.validClass)):a.test(i)?t.validity.valueMissing&&A(t,[n.requiredClass,n.invalidClass,n.validClass]):t.validity.valueMissing?(A(t,[n.invalidClass,n.validClass]),N(t,n.requiredClass)):t.validity.valid||(A(t,[n.validClass,n.requiredClass]),N(t,n.invalidClass)),"input"===i&&u&&(y(t.form,"keyup",o,!0),u=!1))},d=function(t){var a,i,r,l,s,u=!1;if("form"===t.nodeName.toLowerCase()){a=t.elements;for(var d=0,c=a.length;c>d;d++)i=a[d],r=!!i.attributes.disabled,l=!!i.attributes.required,s=!!i.attributes.pattern,"fieldset"!==i.nodeName.toLowerCase()&&!r&&(l||s&&l)&&(o(i),i.validity.valid||u||(e&&i.focus(),u=!0,n.onInvalid.call(t,i)));return!u}return o(t),t.validity.valid},c=function(e){var t=this;t.validationMessage=e},u=function(e){var a=C(e);a.attributes.formnovalidate&&"submit"===a.type&&(t=!0)},v=function(){return E(k,"validity")&&E(k,"checkValidity")},p=function(e,t){if("email"===t)return!q.test(e.value);if("url"===t)return!M.test(e.value);if(t){var i=e.getAttribute("placeholder"),n=e.value;return a=RegExp("^(?:"+t+")$"),n===i?!1:""===n?!1:!a.test(e.value)}return!1},f=function(e){var t={placeholder:e.getAttribute("placeholder")},a=/^(focus|focusin|submit)$/i,r=/^(input|textarea)$/i,l=/^password$/i,s=!!("placeholder"in k);s||!r.test(e.nodeName)||l.test(e.type)||(""!==e.value||a.test(i)?e.value===t.placeholder&&a.test(i)&&(e.value="",A(e,n.placeholderClass)):(e.value=t.placeholder,g(e.form,"submit",function(){i="submit",f(e)},!0),N(e,n.placeholderClass)))},m=function(e,t){var a=parseInt(e.getAttribute("min"),10)||0,i=parseInt(e.getAttribute("max"),10)||!1,n=parseInt(e.getAttribute("step"),10)||1,r=parseInt(e.value,10),l=(r-a)%n;return h(e)||isNaN(r)?"number"===e.getAttribute("type")?!0:!1:"step"===t?e.getAttribute("step")?0!==l:!1:"min"===t?e.getAttribute("min")?a>r:!1:"max"===t?e.getAttribute("max")?r>i:!1:void 0},b=function(e){var t=!!e.attributes.required;return t?h(e):!1},h=function(e){var t=e.getAttribute("placeholder"),a=/^(checkbox|radio)$/i,i=!!e.attributes.required;return!(!i||""!==e.value&&e.value!==t&&(!a.test(e.type)||$(e)))},g=function(e,t,a,i){E(window,"addEventListener")?e.addEventListener(t,a,i):E(window,"attachEvent")&&window.event!==void 0&&("blur"===t?t="focusout":"focus"===t&&(t="focusin"),e.attachEvent("on"+t,a))},y=function(e,t,a,i){E(window,"removeEventListener")?e.removeEventListener(t,a,i):E(window,"detachEvent")&&window.event!==void 0&&e.detachEvent("on"+t,a)},w=function(e){e=e||window.event,e.stopPropagation&&e.preventDefault?(e.stopPropagation(),e.preventDefault()):(e.cancelBubble=!0,e.returnValue=!1)},C=function(e){return e=e||window.event,e.target||e.srcElement},N=function(e,t){var a;e.className?(a=RegExp("(^|\\s)"+t+"(\\s|$)"),a.test(e.className)||(e.className+=" "+t)):e.className=t},A=function(e,t){var a,i,n="object"==typeof t?t.length:1,r=n;if(e.className)if(e.className===t)e.className="";else for(;n--;)a=RegExp("(^|\\s)"+(r>1?t[n]:t)+"(\\s|$)"),i=e.className.match(a),i&&3===i.length&&(e.className=e.className.replace(a,i[1]&&i[2]?" ":""))},E=function(e,t){var a=typeof e[t],i=RegExp("^function|object$","i");return!!(i.test(a)&&e[t]||"unknown"===a)},$=function(e){for(var t=document.getElementsByName(e.name),a=0;t.length>a;a++)if(t[a].checked)return!0;return!1},{setup:r}});
+
+        </script>
+		
+<script type="text/javascript" language="JavaScript">
+
+function getParm(name)
+{
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)";
+  var regex = new RegExp(regexS);
+  var results = regex.exec(window.location.href);
+  
+		cnameField = document.getElementById("cname");
+		ccompanyField = document.getElementById("ccompany");
+		cprojcodeField = document.getElementById("cprojcode");
+		cdecodeField = document.getElementById("cdecode");
+
+  if(results == null)
+    return "";
+  else
+    return results[1];
+	
+  
+}
+
+
+window.onload=function execParm() {
+var cname = getParm("cname");
+var ccompany = getParm("ccompany");
+var cprojcode = getParm("cprojcode");
+var cdecode = getParm("cdecode");
+
+cnameField.value = cname;
+ccompanyField.value = ccompany;
+cprojcodeField.value = cprojcode;
+cdecodeField.value = cdecode;
+}
+
+</script>
+
+
+
+		
+		
+<link rel="alternate" type="text/xml+oembed" href="https://docs.google.com/a/fractalanalytics.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/oembed?url=https://docs.google.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/viewform&amp;format=xml">
+<meta property="og:title" content="Fractal&#39;s Performance Assessment"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/viewform?usp=embed_facebook"><meta property="og:image" content="https://lh6.googleusercontent.com/2xSf8HpBcRlymAVxLUda17CQGTJqn3GVNGgsM9N4j0Jo_15Jkkskt1V6h2OlibqFFjY=w1200-h630-p"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:description" content="Please take a few minutes to provide your feedback on working with Fractal:"><meta name="twitter:card" content="player"><meta name="twitter:title" content="Fractal&#39;s Performance Assessment"><meta name="twitter:url" content="https://docs.google.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/viewform?usp=embed_twitter"><meta name="twitter:image" content="https://lh6.googleusercontent.com/2xSf8HpBcRlymAVxLUda17CQGTJqn3GVNGgsM9N4j0Jo_15Jkkskt1V6h2OlibqFFjY=w435-h251-p-b1-c0x00999999"><meta name="twitter:player:width" content="435"><meta name="twitter:player:height" content="251"><meta name="twitter:player" content="https://docs.google.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/viewform?embedded=true&amp;usp=embed_twitter"><meta name="twitter:description" content="Please take a few minutes to provide your feedback on working with Fractal:"><meta name="twitter:site" content="@googledocs">
+</head>
+<body dir="ltr" class="ss-base-body"   >
+<div class="container">
+
+<div itemscope itemtype="http://schema.org/CreativeWork/FormObject"><meta itemprop="name" content="Fractal&#39;s Performance Assessment">
+<meta itemprop="description" content="Please take a few minutes to provide your feedback on working with Fractal:">
+
+<meta itemprop="url" content="https://docs.google.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/viewform">
+<meta itemprop="embedUrl" content="https://docs.google.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/viewform?embedded=true">
+<meta itemprop="faviconUrl" content="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png">
+
+
+
+
+
+<div class="ss-form-container"><div class="ss-header-image-container"><div class="ss-header-image-image"><div class="ss-header-image-sizer"></div></div></div>
+<div class="ss-top-of-page"><div class="ss-form-heading"><h1 class="ss-form-title" dir="ltr">Fractal&#39;s Performance Assessment</h1>
+
+<div class="ss-form-desc ss-no-ignore-whitespace" dir="ltr">Please take a few minutes to provide your feedback on working with Fractal:</div>
+
+<div class="ss-required-asterisk" style="margin:0% 10% 0% 10% " aria-hidden="true">* Required</div></div></div>
+</br>
+
+
+
+<div class="ss-form"><form action="https://docs.google.com/a/fractalanalytics.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text">
+<div dir="ltr" class="ss-item  ss-text">
+
+
+<!----------------------------------------------------------------------->
+<table style="width:100%">
+<tr>
+<td>
+<div class="ss-form-entry">
+<label class="ss-q-item-label" for="cname"><div class="ss-q-title">Name:
+</div>
+</td>
+<td>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.392214808" value="" class="ss-q-short" id="cname" dir="auto" aria-label="Name:  " title="" >
+<div class="error-message" id="1934739165_errorMessage"></div>
+<!--<div class="required-message">This is a required question</div>-->
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem"></td>
+<td>
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="ccompany"><div class="ss-q-title">Company Name:
+</div>
+</td>
+<td>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.2020216908" value="" class="ss-q-short" id="ccompany" dir="auto" aria-label="Project Name:  " title="" >
+<div class="error-message" id="2032775197_errorMessage"></div>
+<!--<div class="required-message">This is a required question</div>-->
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem"></td>
+<td>
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="cprojcode"><div class="ss-q-title">Project Code:
+</div>
+</td>
+<td>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1388242170" value="" class="ss-q-short" id="cprojcode" dir="auto" aria-label="Company Name:  " title="" >
+<div class="error-message" id="381094085_errorMessage"></div>
+<!--<div class="required-message">This is a required question</div>-->
+
+<!--<div class="ss-form-entry">
+<label class="ss-q-item-label" for="cname"><div class="ss-q-title">Username
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.392214808" value="" class="ss-q-short" id="cname" dir="auto" aria-label="Username  " aria-required="true" required="" title="">
+<div class="error-message" id="1934739165_errorMessage"></div>
+
+<hr></hr>
+
+<div class="required-message">This is a required question</div>
+</div></div>-->
+
+</div> 
+<div class="ss-form-question errorbox-good" role="listitem"></td></tr></table></br>
+<hr style="color:#d10429"></hr>
+</br>
+<div dir="ltr" class="ss-item ss-item-required ss-scale"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1363240886"><div class="ss-q-title">How likely are you to recommend Fractal to a friend or colleague? 
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">(9-10: Promoters, 7-8: Neutral, &lt;=6:Detractors)</div></label>
+
+<table border="0" cellpadding="5" cellspacing="0" id="entry_889438344"><tr aria-hidden="true"><td class="ss-scalenumbers"></td>
+<td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_889438344_1">1</label></td> <td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_889438344_2">2</label></td> <td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_889438344_3">3</label></td> <td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_889438344_4">4</label></td> <td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_889438344_5">5</label></td> <td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_889438344_6">6</label></td> <td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_889438344_7">7</label></td> <td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_889438344_8">8</label></td> <td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_889438344_9">9</label></td> <td class="ss-scalenumbers"><label class="ss-scalenumber" for="group_889438344_10">10</label></td>
+<td class="ss-scalenumbers"></td></tr>
+<tr role="radiogroup" aria-label="How likely are you to recommend Fractal to a friend or colleague?  (9-10: Promoters, 7-8: Neutral, &lt;=6:Detractors) Select a value from a range of 1,(Not at all likely), to 10,(Extremely likely),."><td class="ss-scalerow ss-leftlabel"><div aria-hidden="true" class="aria-todo">(Not at all likely)</div></td>
+<td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.889438344" value="1" id="group_889438344_1" role="radio" class="ss-q-radio" aria-label="1" required="" aria-required="true"></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.889438344" value="2" id="group_889438344_2" role="radio" class="ss-q-radio" aria-label="2" required="" aria-required="true"></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.889438344" value="3" id="group_889438344_3" role="radio" class="ss-q-radio" aria-label="3" required="" aria-required="true"></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.889438344" value="4" id="group_889438344_4" role="radio" class="ss-q-radio" aria-label="4" required="" aria-required="true"></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.889438344" value="5" id="group_889438344_5" role="radio" class="ss-q-radio" aria-label="5" required="" aria-required="true"></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.889438344" value="6" id="group_889438344_6" role="radio" class="ss-q-radio" aria-label="6" required="" aria-required="true"></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.889438344" value="7" id="group_889438344_7" role="radio" class="ss-q-radio" aria-label="7" required="" aria-required="true"></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.889438344" value="8" id="group_889438344_8" role="radio" class="ss-q-radio" aria-label="8" required="" aria-required="true"></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.889438344" value="9" id="group_889438344_9" role="radio" class="ss-q-radio" aria-label="9" required="" aria-required="true"></div></td> <td class="ss-scalerow"><div class="ss-scalerow-fieldcell"><input type="radio" name="entry.889438344" value="10" id="group_889438344_10" role="radio" class="ss-q-radio" aria-label="10" required="" aria-required="true"></div></td>
+<td class="ss-scalerow ss-rightlabel" aria-hidden="true">(Extremely likely)</td></tr></table>
+</br>
+<hr style="color:#d10429"></hr>
+</br>
+<!--<div class="required-message">This is a required question</div></div></div></div>--> 
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-grid"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_108118422"><div class="ss-q-title">Please rate Fractal&#39;s quality of delivery on the following parameters.
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<div>
+<table border="0" cellpadding="5" width="78%"; cellspacing="0"><thead><tr><td class="ss-gridnumbers ss-gridrow-leftlabel"></td>
+<td class="ss-gridnumbers" style="width: 16%;"><label class="ss-gridnumber">Poor</label></td> <td class="ss-gridnumbers" style="width: 16%;"><label class="ss-gridnumber">Fair</label></td> <td class="ss-gridnumbers" style="width: 16%;"><label class="ss-gridnumber">Good</label></td> <td class="ss-gridnumbers" style="width: 16%;"><label class="ss-gridnumber">Very Good</label></td> <td class="ss-gridnumbers" style="width: 16%;"><label class="ss-gridnumber">Excellent</label></td></tr></thead>
+<tbody><tr role="radiogroup" aria-label="Timeliness" aria-describedby="108118422_errorMessage" class="ss-gridrow ss-grid-row-odd"><td class="ss-gridrow ss-gridrow-leftlabel">Timeliness</td>
+<td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1513508745" value="Poor" id="group_1513508745_1" role="radio" class="ss-q-radio" aria-label="Poor" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1513508745" value="Fair" id="group_1513508745_2" role="radio" class="ss-q-radio" aria-label="Fair" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1513508745" value="Good" id="group_1513508745_3" role="radio" class="ss-q-radio" aria-label="Good" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1513508745" value="Very Good" id="group_1513508745_4" role="radio" class="ss-q-radio" aria-label="Very Good" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1513508745" value="Excellent" id="group_1513508745_5" role="radio" class="ss-q-radio" aria-label="Excellent" required="" aria-required="true"></div></label></td></tr> <tr role="radiogroup" aria-label="Accuracy" aria-describedby="108118422_errorMessage" class="ss-gridrow ss-grid-row-even"><td class="ss-gridrow ss-gridrow-leftlabel">Accuracy</td>
+<td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.93138061" value="Poor" id="group_93138061_1" role="radio" class="ss-q-radio" aria-label="Poor" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.93138061" value="Fair" id="group_93138061_2" role="radio" class="ss-q-radio" aria-label="Fair" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.93138061" value="Good" id="group_93138061_3" role="radio" class="ss-q-radio" aria-label="Good" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.93138061" value="Very Good" id="group_93138061_4" role="radio" class="ss-q-radio" aria-label="Very Good" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.93138061" value="Excellent" id="group_93138061_5" role="radio" class="ss-q-radio" aria-label="Excellent" required="" aria-required="true"></div></label></td></tr> <tr role="radiogroup" aria-label="Insights and Recommendation" aria-describedby="108118422_errorMessage" class="ss-gridrow ss-grid-row-odd"><td class="ss-gridrow ss-gridrow-leftlabel">Insights and Recommendation</td>
+<td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.912120367" value="Poor" id="group_912120367_1" role="radio" class="ss-q-radio" aria-label="Poor" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.912120367" value="Fair" id="group_912120367_2" role="radio" class="ss-q-radio" aria-label="Fair" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.912120367" value="Good" id="group_912120367_3" role="radio" class="ss-q-radio" aria-label="Good" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.912120367" value="Very Good" id="group_912120367_4" role="radio" class="ss-q-radio" aria-label="Very Good" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.912120367" value="Excellent" id="group_912120367_5" role="radio" class="ss-q-radio" aria-label="Excellent" required="" aria-required="true"></div></label></td></tr></tbody></table>
+<div class="error-message" id="108118422_errorMessage"></div>
+
+</br>
+<hr style="color:#d10429"></hr>
+</br>
+<!--<div class="required-message">Please enter one response per row</div>--></div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-grid"><div class="ss-form-entry">
+
+<label class="ss-q-item-label" for="entry_180196040"><div class="ss-q-title">Please rate your experience of working with Fractal on the following parameters.
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<div>
+<table border="0" cellpadding="5" cellspacing="0"><thead><tr><td class="ss-gridnumbers ss-gridrow-leftlabel"></td>
+<td class="ss-gridnumbers" style="width: 16%;"><label class="ss-gridnumber">Poor</label></td> <td class="ss-gridnumbers" style="width: 16%;"><label class="ss-gridnumber">Fair</label></td> <td class="ss-gridnumbers" style="width: 16%;"><label class="ss-gridnumber">Good</label></td> <td class="ss-gridnumbers" style="width: 16%;"><label class="ss-gridnumber">Very Good</label></td> <td class="ss-gridnumbers" style="width: 16%;"><label class="ss-gridnumber">Excellent</label></td></tr></thead>
+<tbody><tr role="radiogroup" aria-label="Responsiveness" aria-describedby="180196040_errorMessage" class="ss-gridrow ss-grid-row-odd"><td class="ss-gridrow ss-gridrow-leftlabel">Responsiveness</td>
+<td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.149236034" value="Poor" id="group_149236034_1" role="radio" class="ss-q-radio" aria-label="Poor" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.149236034" value="Fair" id="group_149236034_2" role="radio" class="ss-q-radio" aria-label="Fair" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.149236034" value="Good" id="group_149236034_3" role="radio" class="ss-q-radio" aria-label="Good" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.149236034" value="Very Good" id="group_149236034_4" role="radio" class="ss-q-radio" aria-label="Very Good" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.149236034" value="Excellent" id="group_149236034_5" role="radio" class="ss-q-radio" aria-label="Excellent" required="" aria-required="true"></div></label></td></tr> <tr role="radiogroup" aria-label="Operational Discipline" aria-describedby="180196040_errorMessage" class="ss-gridrow ss-grid-row-even"><td class="ss-gridrow ss-gridrow-leftlabel">Operational Discipline</td>
+<td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1935320850" value="Poor" id="group_1935320850_1" role="radio" class="ss-q-radio" aria-label="Poor" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1935320850" value="Fair" id="group_1935320850_2" role="radio" class="ss-q-radio" aria-label="Fair" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1935320850" value="Good" id="group_1935320850_3" role="radio" class="ss-q-radio" aria-label="Good" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1935320850" value="Very Good" id="group_1935320850_4" role="radio" class="ss-q-radio" aria-label="Very Good" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1935320850" value="Excellent" id="group_1935320850_5" role="radio" class="ss-q-radio" aria-label="Excellent" required="" aria-required="true"></div></label></td></tr> <tr role="radiogroup" aria-label="Technical Expertise" aria-describedby="180196040_errorMessage" class="ss-gridrow ss-grid-row-odd"><td class="ss-gridrow ss-gridrow-leftlabel">Technical Expertise</td>
+<td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1381307973" value="Poor" id="group_1381307973_1" role="radio" class="ss-q-radio" aria-label="Poor" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1381307973" value="Fair" id="group_1381307973_2" role="radio" class="ss-q-radio" aria-label="Fair" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1381307973" value="Good" id="group_1381307973_3" role="radio" class="ss-q-radio" aria-label="Good" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1381307973" value="Very Good" id="group_1381307973_4" role="radio" class="ss-q-radio" aria-label="Very Good" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.1381307973" value="Excellent" id="group_1381307973_5" role="radio" class="ss-q-radio" aria-label="Excellent" required="" aria-required="true"></div></label></td></tr> <tr role="radiogroup" aria-label="Communication" aria-describedby="180196040_errorMessage" class="ss-gridrow ss-grid-row-even"><td class="ss-gridrow ss-gridrow-leftlabel">Communication</td>
+<td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.2034293719" value="Poor" id="group_2034293719_1" role="radio" class="ss-q-radio" aria-label="Poor" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.2034293719" value="Fair" id="group_2034293719_2" role="radio" class="ss-q-radio" aria-label="Fair" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.2034293719" value="Good" id="group_2034293719_3" role="radio" class="ss-q-radio" aria-label="Good" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.2034293719" value="Very Good" id="group_2034293719_4" role="radio" class="ss-q-radio" aria-label="Very Good" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.2034293719" value="Excellent" id="group_2034293719_5" role="radio" class="ss-q-radio" aria-label="Excellent" required="" aria-required="true"></div></label></td></tr></tbody></table>
+<div class="error-message" id="180196040_errorMessage"></div>
+</br>
+<hr style="color:#d10429"></hr>
+</br>
+<!--<div class="required-message">Please enter one response per row</div>--></div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
+
+
+<label class="ss-q-item-label" for="entry_1190427722"><div class="ss-q-title">Overall how would you rate Fractal&#39;s performance? 
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Overall how would you rate Fractal&#39;s performance?   "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1134840586" value="Poor" id="group_1134840586_1" role="radio" class="ss-q-radio" aria-label="Poor" required="" aria-required="true"></span>
+<span class="ss-choice-label">Poor</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1134840586" value="Fair" id="group_1134840586_2" role="radio" class="ss-q-radio" aria-label="Fair" required="" aria-required="true"></span>
+<span class="ss-choice-label">Fair</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1134840586" value="Good" id="group_1134840586_3" role="radio" class="ss-q-radio" aria-label="Good" required="" aria-required="true"></span>
+<span class="ss-choice-label">Good</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1134840586" value="Very Good" id="group_1134840586_4" role="radio" class="ss-q-radio" aria-label="Very Good" required="" aria-required="true"></span>
+<span class="ss-choice-label">Very Good</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1134840586" value="Excellent" id="group_1134840586_5" role="radio" class="ss-q-radio" aria-label="Excellent" required="" aria-required="true"></span>
+<span class="ss-choice-label">Excellent</span>
+</label></li></ul>
+<div class="error-message" id="1190427722_errorMessage"></div>
+</br>
+<hr style="color:#d10429"></hr>
+</br>
+<!--<div class="required-message">This is a required question</div>--></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
+
+<label class="ss-q-item-label" for="entry_944356219"><div class="ss-q-title">Was your level of involvement as per your expectations?
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="Was your level of involvement as per your expectations?  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1698436902" value="It was just right" id="group_1698436902_1" role="radio" class="ss-q-radio" aria-label="It was just right" required="" aria-required="true"></span>
+<span class="ss-choice-label">It was just right</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1698436902" value="I had to be more involved than I expected" id="group_1698436902_2" role="radio" class="ss-q-radio" aria-label="I had to be more involved than I expected" required="" aria-required="true"></span>
+<span class="ss-choice-label">I had to be more involved than I expected</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1698436902" value="I should have been more involved" id="group_1698436902_3" role="radio" class="ss-q-radio" aria-label="I should have been more involved" required="" aria-required="true"></span>
+<span class="ss-choice-label">I should have been more involved</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1698436902" value="__other_option__" id="group_1698436902_4" role="radio" class="ss-q-radio ss-q-other-toggle" required="" aria-required="true"></span>
+<span class="ss-choice-label">Other:</span></label>
+<span class="ss-q-other-container goog-inline-block"><input type="text" name="entry.1698436902.other_option_response" value="" class="ss-q-other" id="entry_1698436902_other_option_response" dir="auto" aria-label="Other"></span>
+</li></ul>
+<div class="error-message" id="944356219_errorMessage"></div>
+</br>
+<hr style="color:#d10429"></hr>
+</br>
+<!--<div class="required-message">This is a required question</div>--></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry">
+
+<label class="ss-q-item-label" for="entry_31116231"><div class="ss-q-title">Please share instances where Fractal could have done better:
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<textarea name="entry.31116231" rows="8" cols="40" class="ss-q-long" id="entry_31116231" dir="auto" aria-label="Please share instances where Fractal could have done better:  " aria-required="true" required=""></textarea>
+<div class="error-message" id="1641313699_errorMessage"></div>
+</br>
+<hr style="color:#d10429"></hr>
+</br>
+<!--<div class="required-message">This is a required question</div>-->
+</div></div></div>
+ <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_791368527"><div class="ss-q-title">Please share instances where Fractal was innovative or exceeded your expectations:
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<textarea name="entry.791368527" rows="8" cols="40" class="ss-q-long" id="entry_791368527" dir="auto" aria-label="Please share instances where Fractal was innovative or exceeded your expectations:  " aria-required="true" required=""></textarea>
+<div class="error-message" id="272685215_errorMessage"></div>
+</br>
+<hr style="color:#d10429"></hr>
+</br>
+<!--<div class="required-message">This is a required question</div>-->
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_2123229264"><div class="ss-q-title">May we use your anonymous feedback as client testimonial? (optional) 
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="May we use your anonymous feedback as client testimonial? (optional)   "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.449472120" value="Yes" id="group_449472120_1" role="radio" class="ss-q-radio" aria-label="Yes"></span>
+<span class="ss-choice-label">Yes</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.449472120" value="No" id="group_449472120_2" role="radio" class="ss-q-radio" aria-label="No"></span>
+<span class="ss-choice-label">No</span>
+</label></li></ul>
+<div class="error-message" id="2123229264_errorMessage"></div>
+</br>
+<hr style="color:#d10429"></hr>
+</br>
+<!--<div class="required-message">This is a required question</div>--></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<input type="text" name="entry.1388242171" value="" class="ss-q-short" id="cdecode" dir="auto" aria-label="Project Code  " title="" disabled>
+<hr></hr>
+<input type="hidden" name="draftResponse" value="[,,&quot;-4374643982853787609&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+
+
+<input type="hidden" name="fbzx" value="-4374643982853787609">
+
+<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+</br>
+
+</td>
+</tr></tbody></table>
+<div style="text-align:center">
+<input type="submit"  name="submit" value="Submit" id="ss-submit" class="btn-style">
+</div></div></ol></form></div></br>
+<div class="ss-footer"><div class="ss-attribution"></div>
+<div class="ss-legal"><div class="disclaimer-separator"></div>
+
+<!--<span class="aria-only-help">Google Forms</span></div></a></div>
+<div class="ss-terms"><span class="disclaimer-msg">This form was created inside of .</span>
+<br>
+<a href="https://docs.google.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/reportabuse?source=https://docs.google.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/viewform">Report Abuse</a>
+-
+<a href="http://www.google.com/accounts/TOS">Terms of Service</a>
+-
+<a href="http://www.google.com/google-d-s/terms.html">Additional Terms</a></div></div></div></div>-->
+
+
+
+<!-- <script type='text/javascript' src='/static/forms/client/js/3464403325-formviewer_prd.js'></script>
+
+<script type="text/javascript">H5F.setup(document.getElementById('ss-form'));
+          _initFormViewer(
+            "[100,,[]\n]\n");</script>-->
+			
+			</div>
+			</div>
+			</body></html>
