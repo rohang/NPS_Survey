@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head>
 <link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png" type="image/x-icon">
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -10,6 +7,44 @@
 <base target="_blank">
 <title>Fractal&#39;s Performance Assessment</title>
 <link href='http://fonts.googleapis.com/css?family=Calibri' rel='stylesheet' type='text/css'>
+
+<link href='bootstrap.css' rel='stylesheet' type='text/css'>
+<link href='bootstrap-responsive.css' rel='stylesheet' type='text/css'>
+<<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="bootbox.min.js"></script>
+
+<script src="bootstrap.min.js"></script>
+<script>
+
+
+       
+		
+		 $(document).on("click", ".btn-primary", function(e) {
+bootbox.dialog({
+                title: "",
+                message: 
+				'<img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/logo.png" id="SurveyHeader_SurveyLogo" alt="Survey Software" vspace="5" height="80%" class="logo" /> ' +
+			
+				'<table align="center"><tr><td colspan="10"><font face="calibri" size ="+1">Your response has been submitted successfully. <br/></td><tr><td align="center"> We appreciate your input.</td></tr><tr><td align="center"> </td></tr><tr><td align="center"><a href="http://www.fractalanalytics.com"><font face="calibri" size="+1">www.fractalanalytics.com</a></font></td></tr></table>' +
+					'<br>'+
+                    '<table align="center"><tr><td colspan="10"></td><td colspan="8" ><a href="http://www.facebook.com/pages/Fractal-Analytics/92102048615"><img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/FB.jpg" class="fbtwit"></a></td><td colspan="2"><a href="http://www.linkedin.com/company/fractal-analytics?trk=company_name"><img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/linkedin.jpg" class="fbtwit" ></a></td><td colspan="2"><a href="https://twitter.com/#!/fractalites"><img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/twitter.jpg" class="fbtwit"></a></td><td colspan="2"><a href="http://www.youtube.com/user/Fractalanalytics"><img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/youtube.jpg" class="fbtwit"></a></td><td colspan="2"><a href="https://google.com/+fractalanalytics"><img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/gplus.jpg" class="fbtwit"></a></td></table>'+
+					'</div>',
+                buttons: {
+                    success: {
+                        label: "Close",
+                        className: "btn-primary",
+                        callback: function () {
+                            var name = $('#name').val();
+                            var answer = $("input[name='awesomeness']:checked").val();
+                            
+                        }
+                    }
+                }
+            }
+        );        
+});
+
+</script>
 
 
 <style type="text/css">
@@ -21,12 +56,12 @@ body /* Internet Explorer */
 
 
 .btn-style {
-  background: #d10429;
-  background-image: -webkit-linear-gradient(top, #d10429, #d10429);
-  background-image: -moz-linear-gradient(top, #d10429, #d10429);
-  background-image: -ms-linear-gradient(top, #d10429, #d10429);
-  background-image: -o-linear-gradient(top, #d10429, #d10429);
-  background-image: linear-gradient(to bottom, #d10429, #d10429);
+  background: Black;
+  background-image: -webkit-linear-gradient(top, Black, Black);
+  background-image: -moz-linear-gradient(top, Black, Black);
+  background-image: -ms-linear-gradient(top, Black, Black);
+  background-image: -o-linear-gradient(top, Black, Black);
+  background-image: linear-gradient(to bottom, Black, Black);
   -webkit-border-radius: 8;
   -moz-border-radius: 8;
   border-radius: 8px;
@@ -127,7 +162,7 @@ margin:0% 10% 0% 10%;
 }
 
 .ss-header-image-image {
-  background: url('https://lh6.googleusercontent.com/CZqJnlaaNrrr-8l7BjQFJixcJHeKqmBPPYbXoqkSPdAFTYYCy8Msf1VuFJfvM86_MmzKMw') no-repeat;
+  background: url('https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/logo.png') no-repeat;
 }
 
 .ss-header-image-sizer {
@@ -187,7 +222,7 @@ body {
 .ss-form-desc, .ss-page-description, .ss-section-description {
   font-family: "Calibri";
   color: rgb(0,0,0);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.080rem;
   font-style: normal;
 }
@@ -202,16 +237,16 @@ body {
 
 .ss-q-title {
   font-family: "Calibri";
-  color: rgb(96,125,139);
-  font-weight: 700;
+  color: Black;
+  font-weight: 500;
   font-size: 1.080rem;
   font-style: normal;
 }
 
 .ss-embeddable-object-container .ss-q-title {
   font-family: "Calibri";
-  color: rgb(96,125,139);
-  font-weight: 700;
+  color: Black;
+  font-weight: 550;
   font-size: 0.750rem;
   font-style: normal;
 }
@@ -226,8 +261,8 @@ body {
 
 .ss-choice-label, .video-secondary-text, .ss-gridrow-leftlabel, .ss-gridnumber, .ss-scalenumber, .ss-leftlabel, .ss-rightlabel {
   font-family: "Calibri";
-  color: rgb(96,125,139);
-  font-weight: 400;
+  color: Black;
+  font-weight: 550;
   font-size: 1.000rem;
   font-style: normal;
 }
@@ -460,6 +495,16 @@ span.promoter >input[type='radio']:checked:before {
     
 <script type="text/javascript" language="JavaScript">
 
+function windowpop(url, width, height) {
+    var leftPosition, topPosition;
+    //Allow for borders.
+    leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
+    //Allow for title and status bars.
+    topPosition = (window.screen.height / 2) - ((height / 2) + 50);
+    //Open the window.
+    window.open(url, "Window2", "status=no,height=" + height + ",width=" + width + ",resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no");
+}
+
 function getParm(name)
 {
   name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
@@ -479,6 +524,7 @@ function getParm(name)
   
   
 }
+
 
 
 window.onload=function execParm() {
@@ -521,7 +567,7 @@ ckeyField.value = ckey;
 
 
 
-<img src="https://lh6.googleusercontent.com/CZqJnlaaNrrr-8l7BjQFJixcJHeKqmBPPYbXoqkSPdAFTYYCy8Msf1VuFJfvM86_MmzKMw" alt="Mountain View" style="height: auto;margin:1% 20% 0% 15%;">
+<img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/logo.png" alt="Mountain View" style="height: auto;margin:1% 20% 0% 15%;">
 <div class="ss-top-of-page"><div class="ss-form-heading"><h1 class="ss-form-title" dir="ltr">Fractal&#39;s Performance Assessment</h1>
 
 <div class="ss-form-desc ss-no-ignore-whitespace" dir="ltr">Please take a few minutes to provide your feedback on working with Fractal:</div>
@@ -531,9 +577,10 @@ ckeyField.value = ckey;
 
 
 
-<div class="ss-form"><script type="text/javascript">var submitted=false;</script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
-onload="if(submitted) {window.location='https://cdn.rawgit.com/rohang/NPS_Survey/master/Custom/npsthankyou.html';}"></iframe>
+<div class="ss-form" id="dialog"><script type="text/javascript">var submitted=false;</script>
+
+   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
+></iframe>
       <form action="https://docs.google.com/a/fractalanalytics.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/formResponse" method="post" target="hidden_iframe" 
 onsubmit="submitted=true;">
 <div class="ss-form-question errorbox-good" role="listitem">
@@ -562,7 +609,7 @@ onsubmit="submitted=true;">
 </td>
 <td>
 <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-<input type="text" name="entry.137336586" value="" class="ss-q-short" id="ccompany" dir="auto" aria-label="Company Name  " title="">
+<input type="text" name="entry.137336586" value="" class="ss-q-short" id="ccompany" dir="auto" aria-label="Company Name  " title="" disabled>
 <div class="error-message" id="2032775197_errorMessage"></div>
 <!--<div class="required-message">This is a required question</div>-->
 </div></div></div> <div class="ss-form-question errorbox-good" role="listitem"></td>
@@ -574,13 +621,13 @@ onsubmit="submitted=true;">
 </td>
 <td>
 <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-<input type="text" name="entry.69488024" value="" class="ss-q-short" id="cdecode" dir="auto" aria-label="Project Code  " title="">
+<input type="text" name="entry.69488024" value="" class="ss-q-short" id="cdecode" dir="auto" aria-label="Project Code  " title="" disabled>
 <div class="error-message" id="381094085_errorMessage"></div>
 <!--<div class="required-message">This is a required question</div>-->
 
 <!--<div class="ss-form-entry">
 <label class="ss-q-item-label" for="cname"><div class="ss-q-title">Username
-<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+
 <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
 <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
 <input type="text" name="entry.392214808" value="" class="ss-q-short" id="cname" dir="auto" aria-label="Username  " aria-required="true" required="" title="">
@@ -593,11 +640,11 @@ onsubmit="submitted=true;">
 
 </div> 
 <div class="ss-form-question errorbox-good" role="listitem"></td></tr></table></br>
-<hr style="color:#d10429"></hr>
+<hr style="color:Black"></hr>
 </br>
 <div dir="ltr" class="ss-item ss-item-required ss-scale"><div class="ss-form-entry">
 <label class="ss-q-item-label" for="entry_1363240886"><div class="ss-q-title">How likely are you to recommend Fractal to a friend or colleague? 
-<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+
 <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
 <div class="ss-q-help ss-secondary-text" dir="ltr">(9-10: Promoters, 7-8: Neutral, &lt;=6:Detractors)</div></label>
 
@@ -630,13 +677,13 @@ onsubmit="submitted=true;">
 
 <td class="ss-scalerow ss-rightlabel" aria-hidden="true">(Extremely likely)</td></tr></table>
 </br>
-<hr style="color:#d10429"></hr>
+<hr style="color:Black"></hr>
 </br>
 <!--<div class="required-message">This is a required question</div></div></div></div>--> 
 <div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item ss-item-required ss-grid"><div class="ss-form-entry">
 <label class="ss-q-item-label" for="entry_108118422"><div class="ss-q-title">Please rate Fractal&#39;s quality of delivery on the following parameters.
-<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+
 <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
 <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
 <div>
@@ -649,13 +696,13 @@ onsubmit="submitted=true;">
 <div class="error-message" id="108118422_errorMessage"></div>
 
 </br>
-<hr style="color:#d10429"></hr>
+<hr style="color:Black"></hr>
 </br>
 <!--<div class="required-message">Please enter one response per row</div>--></div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item ss-item-required ss-grid"><div class="ss-form-entry">
 
 <label class="ss-q-item-label" for="entry_180196040"><div class="ss-q-title">Please rate your experience of working with Fractal on the following parameters.
-<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+
 <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
 <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
 <div>
@@ -673,14 +720,14 @@ onsubmit="submitted=true;">
 <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.2034293719" value="Poor" id="group_2034293719_1" role="radio" class="detr" aria-label="Poor" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.2034293719" value="Fair" id="group_2034293719_2" role="radio" class="detr" aria-label="Fair" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.2034293719" value="Good" id="group_2034293719_3" role="radio" class="detr" aria-label="Good" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.2034293719" value="Very Good" id="group_2034293719_4" role="radio" class="detr" aria-label="Very Good" required="" aria-required="true"></div></label></td> <td class="ss-gridrow" style="width: 16%;"><label class="ss-grid-button-label"><div class="ss-grid-button-wrapper"><input type="radio" name="entry.2034293719" value="Excellent" id="group_2034293719_5" role="radio" class="detr" aria-label="Excellent" required="" aria-required="true"></div></label></td></tr></tbody></table>
 <div class="error-message" id="180196040_errorMessage"></div>
 </br>
-<hr style="color:#d10429"></hr>
+<hr style="color:Black"></hr>
 </br>
 <!--<div class="required-message">Please enter one response per row</div>--></div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
 
 
 <label class="ss-q-item-label" for="entry_1190427722"><div class="ss-q-title">Overall how would you rate Fractal&#39;s performance? 
-<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+
 <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
 <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
 
@@ -697,13 +744,13 @@ onsubmit="submitted=true;">
 </label></li></ul>
 <div class="error-message" id="1190427722_errorMessage"></div>
 </br>
-<hr style="color:#d10429"></hr>
+<hr style="color:Black"></hr>
 </br>
 <!--<div class="required-message">This is a required question</div>--></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
 
 <label class="ss-q-item-label" for="entry_944356219"><div class="ss-q-title">Was your level of involvement as per your expectations?
-<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+
 <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
 <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
 
@@ -714,37 +761,37 @@ onsubmit="submitted=true;">
 </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1698436902" value="I should have been more involved" id="group_1698436902_3" role="radio" class="detr" aria-label="I should have been more involved" required="" aria-required="true"></span>
 <span class="ss-choice-label">I should have been more involved</span>
 </label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1698436902" value="__other_option__" id="group_1698436902_4" role="radio" class="detr ss-q-other-toggle" required="" aria-required="true"></span>
-<span class="ss-choice-label">Other:</span></label>
-<span class="ss-q-other-container goog-inline-block"><input type="text" name="entry.1698436902.other_option_response" value="" class="ss-q-other" id="entry_1698436902_other_option_response" dir="auto" aria-label="Other"></span>
+<span class="ss-choice-label">Other:   </span>
+<span class="ss-q-other-container goog-inline-block"><input type="text" name="entry.1698436902.other_option_response" value="" class="ss-q-other" id="entry_1698436902_other_option_response" dir="auto" aria-label="Other"></span></label>
 </li></ul>
 <div class="error-message" id="944356219_errorMessage"></div>
 </br>
-<hr style="color:#d10429"></hr>
+<hr style="color:Black"></hr>
 </br>
 <!--<div class="required-message">This is a required question</div>--></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry">
 
 <label class="ss-q-item-label" for="entry_31116231"><div class="ss-q-title">Please share instances where Fractal could have done better:
-<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+
 <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
 <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
 <textarea name="entry.31116231" rows="8" cols="40" class="ss-q-long" id="entry_31116231" dir="auto" aria-label="Please share instances where Fractal could have done better:  " aria-required="true" required=""></textarea>
 <div class="error-message" id="1641313699_errorMessage"></div>
 </br>
-<hr style="color:#d10429"></hr>
+<hr style="color:Black"></hr>
 </br>
 <!--<div class="required-message">This is a required question</div>-->
 </div></div></div>
  <div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry">
 <label class="ss-q-item-label" for="entry_791368527"><div class="ss-q-title">Please share instances where Fractal was innovative or exceeded your expectations:
-<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+
 <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
 <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
 <textarea name="entry.791368527" rows="8" cols="40" class="ss-q-long" id="entry_791368527" dir="auto" aria-label="Please share instances where Fractal was innovative or exceeded your expectations:  " aria-required="true" required=""></textarea>
 <div class="error-message" id="272685215_errorMessage"></div>
 </br>
-<hr style="color:#d10429"></hr>
+<hr style="color:Black"></hr>
 </br>
 <!--<div class="required-message">This is a required question</div>-->
 </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
@@ -763,7 +810,7 @@ onsubmit="submitted=true;">
 
 <input type="hidden" name="entry.344993933" value="" class="ss-q-short" id="ckey" dir="auto" aria-label="Project Code  " title="">
 
-<hr style="color:#d10429"></hr>
+<hr style="color:Black"></hr>
 
 
 
@@ -781,7 +828,7 @@ onsubmit="submitted=true;">
 </td>
 </tr></tbody></table>
 <div style="text-align:center">
-<input type="submit"  name="submit" value="Submit" id="ss-submit" class="btn-style">
+<input type="submit"  name="submit" value="Submit" id="ss-submit" class="btn btn-primary btn-lg">
 </div></div></ol></form></div></br>
 <div class="ss-footer"><div class="ss-attribution"></div>
 <div class="ss-legal"><div class="disclaimer-separator"></div>
