@@ -12,40 +12,429 @@
 <link href='https://cdn.rawgit.com/rohang/NPS_Survey/master/Custom/bootstrap-responsive.css' rel='stylesheet' type='text/css'>
 <<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Custom/bootbox.min.js"></script>
-
 <script src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Custom/bootstrap.min.js"></script>
-<script>
 
 
-       
-		
-		 $(document).on("click", ".btn-primary", function(e) {
-bootbox.dialog({
-                title: "",
-                message: 
-				'<img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/logo.png" id="SurveyHeader_SurveyLogo" alt="Survey Software" vspace="5" height="80%" class="logo" /> ' +
-			
-				'<table align="center"><tr><td colspan="10"><font face="calibri" size ="+1">Your response has been submitted successfully. <br/></td><tr><td align="center"> We appreciate your input.</td></tr><tr><td align="center"> </td></tr><tr><td align="center"><a href="http://www.fractalanalytics.com"><font face="calibri" size="+1">www.fractalanalytics.com</a></font></td></tr></table>' +
-					'<br>'+
-                    '<table align="center"><tr><td colspan="10"></td><td colspan="8" ><a href="http://www.facebook.com/pages/Fractal-Analytics/92102048615"><img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/FB.jpg" class="fbtwit"></a></td><td colspan="2"><a href="http://www.linkedin.com/company/fractal-analytics?trk=company_name"><img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/linkedin.jpg" class="fbtwit" ></a></td><td colspan="2"><a href="https://twitter.com/#!/fractalites"><img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/twitter.jpg" class="fbtwit"></a></td><td colspan="2"><a href="http://www.youtube.com/user/Fractalanalytics"><img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/youtube.jpg" class="fbtwit"></a></td><td colspan="2"><a href="https://google.com/+fractalanalytics"><img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/gplus.jpg" class="fbtwit"></a></td></table>'+
-					'</div>',
-                buttons: {
-                    success: {
-                        label: "Close",
-                        className: "btn-primary",
-                        callback: function () {
-                            var name = $('#name').val();
-                            var answer = $("input[name='awesomeness']:checked").val();
-                            
-                        }
-                    }
-                }
-            }
-        );        
-});
 
-</script>
 
+
+
+
+
+
+
+<link  type='text/css' rel='stylesheet' media='screen and (max-device-width: 721px)'>
+
+<style type="text/css">
+
+body /* Internet Explorer */ 
+{ 
+  background-color: #FFFFFF;
+} 
+
+
+.btn-style {
+  background: Black;
+  background-image: -webkit-linear-gradient(top, Black, Black);
+  background-image: -moz-linear-gradient(top, Black, Black);
+  background-image: -ms-linear-gradient(top, Black, Black);
+  background-image: -o-linear-gradient(top, Black, Black);
+  background-image: linear-gradient(to bottom, Black, Black);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn-style:hover {
+  text-decoration: none;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 4px 0px 0px;
+    line-height: normal;
+}
+
+body /* Mozilla Firefox alignment */ 
+{ 
+  background-color: #FFFFFF;
+} 
+
+input type="textbox"
+{
+  margin: 0px;
+  border: 1px solid #003C9F;
+  font-family: Calibri;
+  font-size: 12px;
+  color: #000000;
+}
+
+input type="checkbox"
+{
+  margin: 0px;
+  border: 1px solid #003C9F;
+  font-family: Calibri;
+  font-size: 12px;
+  color: #000000;
+}
+
+textarea
+{
+  margin: 0px;
+  border: 1px solid #003C9F;
+  font-family: Calibri;
+  font-size: 12px;
+  color: #000000;
+  width: 430px;
+}
+select
+{
+  margin: 0px;
+  border: 1px solid #003C9F;
+  font-family: Calibri;
+  font-size: 12px;
+  color: #000000;
+}
+
+.CheckboxSeparator 
+{
+  width: 0px;
+}
+.ss-form-container, .ss-resp-card {
+  background-color: rgb(255,255,255);
+}
+
+.ss-footer, .ss-response-footer {
+  background-color: rgb(255,255,255);
+}
+
+.ss-grid-row-odd {
+  background-color: rgb(242,242,242);
+}
+
+
+
+.ss-form-title {
+  text-align: left;
+}
+
+.ss-form-title[dir="rtl"] {
+  text-align: right;
+}
+
+.ss-form-desc {
+  text-align: justify;
+  margin:0% 10% 0% 10%;
+}
+.ss-form{
+margin:0% 10% 0% 10%;
+  }
+.ss-form-desc[dir="rtl"] {
+  text-align: justify;
+  margin:0% 10% 0% 10%;
+}
+
+.ss-header-image-container {
+  height: auto;
+ margin:1% 20% 0% 15%; 
+}
+
+.ss-header-image-image {
+  background: url('https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/logo.png') no-repeat;
+}
+
+.ss-header-image-sizer {
+  padding-top: 25.026%;
+}
+
+.ss-item {
+  font-size: 1.080rem;
+}
+
+.ss-choices {
+  font-size: 1.000rem;
+  list-style-type: none
+  
+}
+
+body {
+  font-family: "Calibri";
+  color: rgb(0,0,0);
+  font-weight: 400;
+  font-size: 1.080rem;
+  font-style: normal;
+}
+
+.ss-record-username-message {
+  font-family: "Calibri";
+  color: rgb(0,0,0);
+  font-weight: 400;
+  font-size: 1.080rem;
+  font-style: normal;
+}
+
+.ss-form-title {
+  font-family: "Calibri";
+  color: rgb(255,255,255);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.ss-confirmation {
+  font-family: "Calibri";
+  color: rgb(119,119,119);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.ss-page-title, .ss-section-title {
+  font-family: "Calibri";
+  color: rgb(255,255,255);
+  font-weight: 400;
+  font-size: 0.750rem;
+  font-style: normal;
+}
+
+.ss-form-desc, .ss-page-description, .ss-section-description {
+  font-family: "Calibri";
+  color: rgb(0,0,0);
+  font-weight: 500;
+  font-size: 1.080rem;
+  font-style: normal;
+}
+
+.ss-resp-content {
+  font-family: "Calibri";
+  color: rgb(0,0,0);
+  font-weight: 400;
+  font-size: 1.080rem;
+  font-style: normal;
+}
+
+.ss-q-title {
+  font-family: "Calibri";
+  color: Black;
+  font-weight: 500;
+  font-size: 1.080rem;
+  font-style: normal;
+}
+
+.ss-embeddable-object-container .ss-q-title {
+  font-family: "Calibri";
+  color: Black;
+  font-weight: 550;
+  font-size: 0.750rem;
+  font-style: normal;
+}
+
+.ss-q-help, .ss-q-time-hint {
+  font-family: "Calibri";
+  color: rgb(132,132,132);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.ss-choice-label, .video-secondary-text, .ss-gridrow-leftlabel, .ss-gridnumber, .ss-scalenumber, .ss-leftlabel, .ss-rightlabel {
+  font-family: "Calibri";
+  color: Black;
+  font-weight: 550;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.error-message, .required-message, .ss-required-asterisk {
+  font-family: "Calibri";
+  color: rgb(196,59,29);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.ss-send-email-receipt {
+  font-family: "Calibri";
+  color: rgb(93,123,137);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.ss-password-warning {
+  font-family: "Arial";
+  color: rgb(119,119,119);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: italic;
+}
+
+.PageBackground 
+{
+  background-color: #EEEEEE;
+  height:20px !important; 
+}
+
+.disclaimer {
+  font-family: "Arial";
+  color: rgb(119,119,119);
+  font-weight: 400;
+  font-size: 0.850rem;
+  font-style: normal;
+}
+
+.ss-footer-content {
+  font-family: "Arial";
+  color: rgb(93,123,137);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.progress-label {
+  font-family: "Calibri";
+  color: rgb(132,132,132);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+a:link {
+  color: rgb(0,0,238);
+}
+
+a:visited {
+  color: rgb(85,26,139);
+}
+
+a:active {
+  color: rgb(252,0,0);
+}
+
+input[type='text'], input:not([type]), textarea {
+  font-size: 1.000rem;
+}
+
+.error, .required, .errorbox-bad {
+  border-color: rgb(196,59,29);
+}
+
+.jfk-progressBar-nonBlocking .progress-bar-thumb {
+  background-color: rgb(132,132,132);
+}
+
+.ss-logo-image {
+  background-image: url('//ssl.gstatic.com/docs/forms/forms_logo_small_dark.png');
+  background-size: 108px 21px;
+  width: 108px;
+  height: 21px;
+}
+
+@media screen and (-webkit-device-pixel-ratio: 2) {
+.ss-logo-image {
+  background-image: url('//ssl.gstatic.com/docs/forms/forms_logo_small_dark_2x.png');
+}
+}
+
+span.detractor > input[type='radio'] {
+  -webkit-appearance:none;
+  width:15px;
+  height:15px;
+  border:1px solid darkgray;
+  border-radius:50%;
+  outline:none;
+  box-shadow:0 0 4px 2px red inset;
+      
+}
+
+span.detractor >input[type='radio']:hover {
+  box-shadow:0 0 4px 3px red inset;
+}
+
+
+span.detractor >input[type='radio']:before {
+  content:'';
+  display:block;
+  width:60%;
+  height:60%;
+  margin: 20% auto;    
+  border-radius:50%;    
+}
+
+span.detractor >input[type='radio']:checked:before {
+  background:black;
+}
+
+span.neutral > input[type='radio'] {
+  -webkit-appearance:none;
+  width:15px;
+  height:15px;
+  border:1px solid darkgray;
+  border-radius:50%;
+  outline:none;
+  box-shadow:0 0 4px 2px yellow inset;    
+}
+
+span.neutral >input[type='radio']:hover {
+  box-shadow:0 0 4px 3px yellow inset;
+}
+
+
+span.neutral >input[type='radio']:before {
+  content:'';
+  display:block;
+  width:60%;
+  height:60%;
+  margin: 20% auto;    
+  border-radius:50%;    
+}
+
+span.neutral >input[type='radio']:checked:before {
+  background:black;
+}
+
+span.promoter > input[type='radio'] {
+  -webkit-appearance:none;
+  width:15px;
+  height:15px;
+  border:1px solid darkgray;
+  border-radius:50%;
+  outline:none;
+  box-shadow:0 0 4px 2px green inset;    
+}
+
+span.promoter >input[type='radio']:hover {
+  box-shadow:0 0 4px 3px green inset;
+}
+
+
+span.promoter >input[type='radio']:before {
+  content:'';
+  display:block;
+  width:60%;
+  height:60%;
+  margin: 20% auto;    
+  border-radius:50%;    
+}
+
+span.promoter >input[type='radio']:checked:before {
+  background:black;
+}
+
+.container{
+  width:80%;
+  margin-left:10%;
+  margin-right:10%;
+  border-style: none;
+  border-width: none;
+  #-webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  #-moz-box-shadow:7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  #box-shadow:1px 5px 8px -3px rgba(40, 40, 40, 0.75);
+}
 
 <style type="text/css">
 
@@ -456,9 +845,6 @@ span.promoter >input[type='radio']:checked:before {
 
 </style>
 
-
-<link  type='text/css' rel='stylesheet' media='screen and (max-device-width: 721px)'>
-
 <script type="text/javascript">
           /**
  * @license
@@ -495,14 +881,43 @@ span.promoter >input[type='radio']:checked:before {
     
 <script type="text/javascript" language="JavaScript">
 
-function windowpop(url, width, height) {
-    var leftPosition, topPosition;
-    //Allow for borders.
-    leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
-    //Allow for title and status bars.
-    topPosition = (window.screen.height / 2) - ((height / 2) + 50);
-    //Open the window.
-    window.open(url, "Window2", "status=no,height=" + height + ",width=" + width + ",resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no");
+
+
+function closeWindow() { 
+window.open('','_parent',''); 
+window.close(); 
+} 
+
+
+
+
+       
+    
+      function bootpopup(e) {
+
+     
+
+      bootbox.dialog({
+                title: "",
+                message: 
+        '<img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/logo.png" id="SurveyHeader_SurveyLogo" alt="Survey Software" vspace="5" height="80%" class="logo" /> ' +
+      
+        '<table align="center"><tr><td colspan="10"><font face="calibri" size ="+1">Your response has been submitted successfully. <br/></td><tr><td align="center"> We appreciate your input.</td></tr><tr><td align="center"> </td></tr><tr><td align="center"><a href="http://www.fractalanalytics.com"><font face="calibri" size="+1">www.fractalanalytics.com</a></font></td></tr></table>' +
+          '<br>'+
+                    '<table align="center"><tr><td colspan="10"></td><td colspan="8" ><a href="http://www.facebook.com/pages/Fractal-Analytics/92102048615"><img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/FB.jpg" class="fbtwit"></a></td><td colspan="2"><a href="http://www.linkedin.com/company/fractal-analytics?trk=company_name"><img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/linkedin.jpg" class="fbtwit" ></a></td><td colspan="2"><a href="https://twitter.com/#!/fractalites"><img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/twitter.jpg" class="fbtwit"></a></td><td colspan="2"><a href="http://www.youtube.com/user/Fractalanalytics"><img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/youtube.jpg" class="fbtwit"></a></td><td colspan="2"><a href="https://google.com/+fractalanalytics"><img src="https://cdn.rawgit.com/rohang/NPS_Survey/master/Images/gplus.jpg" class="fbtwit"></a></td></table>'+
+          '</div>',
+                buttons: {
+                    success: {
+                        label: "Close",
+                        className: "btn-primary",
+                        callback: function () {
+                            window.location='http://www.fractalanalytics.com/';
+                            
+                        }
+                    }
+                }
+            }
+        );        
 }
 
 function getParm(name)
@@ -579,13 +994,30 @@ ckeyField.value = ckey;
 
 <div class="ss-form" id="dialog"><script type="text/javascript">var submitted=false;</script>
 
-   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
-></iframe>
-      <form action="https://docs.google.com/a/fractalanalytics.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/formResponse" method="post" target="hidden_iframe" 
-onsubmit="submitted=true;">
+   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='javascript:bootpopup()';}"></iframe>
+      <form action="https://docs.google.com/a/fractalanalytics.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 <div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item ss-item-required ss-text">
 <div dir="ltr" class="ss-item  ss-text">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!----------------------------------------------------------------------->
@@ -828,27 +1260,12 @@ onsubmit="submitted=true;">
 </td>
 </tr></tbody></table>
 <div style="text-align:center">
-<input type="submit"  name="submit" value="Submit" id="ss-submit" class="btn btn-primary btn-lg">
+<input type="submit"  name="submit" value="Submit" id="ss-submit" class="btn-primary" >
 </div></div></ol></form></div></br>
 <div class="ss-footer"><div class="ss-attribution"></div>
 <div class="ss-legal"><div class="disclaimer-separator"></div>
 
-<!--<span class="aria-only-help">Google Forms</span></div></a></div>
-<div class="ss-terms"><span class="disclaimer-msg">This form was created inside of .</span>
-<br>
-<a href="https://docs.google.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/reportabuse?source=https://docs.google.com/forms/d/11sFu0KuESKJ65uyS3U5hFR8rvBtk1Fqe7kcCVV8BtFs/viewform">Report Abuse</a>
--
-<a href="http://www.google.com/accounts/TOS">Terms of Service</a>
--
-<a href="http://www.google.com/google-d-s/terms.html">Additional Terms</a></div></div></div></div>-->
 
-
-
-<!-- <script type='text/javascript' src='/static/forms/client/js/3464403325-formviewer_prd.js'></script>
-
-<script type="text/javascript">H5F.setup(document.getElementById('ss-form'));
-          _initFormViewer(
-            "[100,,[]\n]\n");</script>-->
       
       </div>
       </div>
